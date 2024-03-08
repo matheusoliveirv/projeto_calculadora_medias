@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oldenburg&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Henny+Penny&display=swap" rel="stylesheet">
+
+    <title>Boletim Hogwarts</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="logo-area">
+                <img src="images/HP-Ideas/hogwarts.png" alt="Capelo e Diploma">
+                <p>Escola de Magia e <br />Bruxaria de Hogwarts</p>
+            </div>
+            <div class="nome-area">
+                <p>Boletim Escolar</p>
+            </div>
+
+        </header>
+        <form id="form-atividade">
+            <div class="labelArea">
+                <input type="text" class="nome-atividade" required />
+                <label>Digite a atividade</label>
+            </div>
+            <div class="labelArea">
+                <input type="number" class="nota-atividade" required min="0" max="10" />
+                <label>Digite a nota</label>
+            </div>
+            <button type="submit">
+                <img src="images/carta.png" alt="">
+            </button>
+        </form>
+        <div class="table-wrapper">
+            <table cellspacing="0">
+                <thead>
+                    <tr>
+                        <th>Nome da atividade</th>
+                        <th>Nota da atividade</th>
+                        <th>Aprovado?</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+        </div>
+        <div class="table-wrapper">
+            <table>
+                <thead>
+                    <tr class="tr-media">
+                        <td class="td-media">Média Final</td>
+                        <td class="td-media media-final-valor">---</td>
+                        <td class="media-final-resultado">---</td>
+                    </tr>
+                </thead>
+            </table>
+        </div>
+        <footer>
+            <img src="images/carimbo-hp.png" />
+            <div class="assinatura">
+                <img src="images/Assinatura_de_Minerva_McGonagall.webp" />
+                <p>Diretora Minerva</p>
+            </div>
+        </footer>
+    </div>
+
+
+    <script src="function.js"></script>
+</body>
+
+</html>
